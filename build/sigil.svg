@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1600" width="1000" height="1600">
+  <defs>
+    <mask id="cutL">
+      <rect width="1000" height="1600" fill="black"/>
+      <circle cx="500" cy="800" r="420" fill="white"/>
+      <circle cx="560.6" cy="800" r="438.6" fill="black"/>
+    </mask>
+    <mask id="cutR">
+      <rect width="1000" height="1600" fill="black"/>
+      <circle cx="500" cy="800" r="420" fill="white"/>
+      <circle cx="439.4" cy="800" r="438.6" fill="black"/>
+    </mask>
+  </defs>
+  <g fill="#ffffff">
+    <rect width="1000" height="1600" mask="url(#cutL)"/>
+    <rect width="1000" height="1600" mask="url(#cutR)"/>
+    <path d="M500 40 C515 300 515 500 515 800 C515 1100 515 1300 500 1560 C485 1300 485 1100 485 800 C485 500 485 300 500 40 Z"/>
+  </g>
+</svg>
