@@ -8,7 +8,7 @@ mkdir -p "$TMP_DIR/home"
 rsvg-convert -w 900 -h 500 "$BUILD_DIR/unlock.svg" -o "$ROOT_DIR/unlock.png"
 echo "  wrote unlock.png"
 
-magick "$OUT_DIR/1-ensign.jpg" -crop 2560x1600+0+351 +repage "$BUILD_DIR/bg.png"
+magick "$OUT_DIR/2-ensign.jpg" -crop 2560x1600+0+351 +repage "$BUILD_DIR/bg.png"
 shot "$BUILD_DIR/preview.html" "$TMP_DIR/preview-raw.png" 1280 900 2.25
 magick "$TMP_DIR/preview-raw.png" -crop 2880x1800+0+0 +repage "$ROOT_DIR/preview.png"
 rm -f "$BUILD_DIR/bg.png"
@@ -63,7 +63,7 @@ fi
 
 rm -rf "$TMP_DIR/gif" && mkdir -p "$TMP_DIR/gif"
 i=0
-for name in 1-ensign 2-aphelion 3-eclipse 4-monolith 5-void; do
+for name in 1-aphelion-mark 2-ensign 3-aphelion 4-eclipse 5-monolith 6-void; do
   magick "$OUT_DIR/$name.jpg" -resize 1440x900^ -gravity center -extent 1440x900 \
     -resize 720x450 "$TMP_DIR/gif/$(printf '%02d' $i).png"
   i=$((i + 1))

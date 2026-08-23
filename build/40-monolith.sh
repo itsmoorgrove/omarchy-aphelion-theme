@@ -64,4 +64,4 @@ magick $T-scene.png \
 make_vignette $T-v.png 24
 magick $T-lit.png $T-v.png -compose Multiply -composite -level 1%,99.5% -modulate 100,93,100 $T-graded.png
 apply_grain $T-graded.png $T-final.png 15
-encode $T-final.png 4-monolith
+encode $T-final.png 5-monolith

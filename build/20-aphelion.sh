@@ -74,4 +74,4 @@ magick $T-scene.png $T-horizon.png -compose Screen -composite $T-lit.png
 make_vignette $T-v.png 22
 magick $T-lit.png $T-v.png -compose Multiply -composite -level 1%,99.5% -modulate 100,94,100 $T-graded.png
 apply_grain $T-graded.png $T-final.png 15
-encode $T-final.png 2-aphelion
+encode $T-final.png 3-aphelion

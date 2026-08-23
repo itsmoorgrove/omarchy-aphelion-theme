@@ -81,21 +81,26 @@ Plus `orange #b08d7c` and `brown #6b6257`.
 
 ## Wallpapers
 
-Five, 3840×2160, generated against this palette rather than sourced. Omarchy picks the
-first one alphabetically on a fresh activation, so `1-ensign` is what you land on.
+Six, 3840×2160, generated against this palette rather than sourced. Omarchy picks the
+first one alphabetically on a fresh activation, so `1-aphelion-mark` is what you land on.
 
 ![Backgrounds](preview.gif)
 
 | | |
 |---|---|
-| `1-ensign` | the mark and the wordmark, alone — the default |
-| `2-aphelion` | the sigil over a reflecting plain, horizon burst below |
-| `3-eclipse` | the sigil centred in a swirling nebula |
-| `4-monolith` | the sigil as pure geometry against soft weather |
-| `5-void` | 0.7% mean luminance, for OLED |
+| `1-aphelion-mark` | the full lockup over a reflecting plain — the default |
+| `2-ensign` | the mark and the wordmark, alone |
+| `3-aphelion` | the sigil over that same plain, horizon burst below |
+| `4-eclipse` | the sigil centred in a swirling nebula |
+| `5-monolith` | the sigil as pure geometry against soft weather |
+| `6-void` | 0.7% mean luminance, for OLED |
 
 The sigil is composited at or below its native resolution in every plate, so the
 crystalline edge stays sharp rather than turning to mush.
+
+`W_OVERRIDE=7680 H_OVERRIDE=4320 bash build/25-aphelion-mark.sh` re-renders that plate at
+8K into `1-aphelion-mark-8k.jpg` at the repo root — outside `backgrounds/`, so the wallpaper
+cycle stays 4K.
 
 ## Boot splash
 
@@ -111,7 +116,7 @@ logo and colours are pushed to the SDDM login screen at the same time.
 colors.toml          palette
 hyprland.lua         border gradient, rounding, shadow
 icons.theme          Yaru-blue-dark
-backgrounds/         five wallpapers
+backgrounds/         six wallpapers
 unlock.png           Plymouth boot logo
 preview.png          theme switcher preview
 preview-unlock.png   Plymouth switcher preview

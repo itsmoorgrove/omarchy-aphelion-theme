@@ -50,6 +50,6 @@ make_vignette $T-v.png 20
 magick $T-lit.png $T-v.png -compose Multiply -composite \
   -level 1.5%,99.5% -modulate 100,94,100 $T-graded.png
 apply_grain $T-graded.png $T-final.png 15
-encode $T-final.png 3-eclipse
+encode $T-final.png 4-eclipse
 
 cp $T-sky.png "$TMP_DIR/eclipse-sky.png"
