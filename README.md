@@ -98,10 +98,6 @@ first one alphabetically on a fresh activation, so `1-aphelion-mark` is what you
 The sigil is composited at or below its native resolution in every plate, so the
 crystalline edge stays sharp rather than turning to mush.
 
-`W_OVERRIDE=7680 H_OVERRIDE=4320 bash build/25-aphelion-mark.sh` re-renders that plate at
-8K into `1-aphelion-mark-8k.jpg` at the repo root — outside `backgrounds/`, so the wallpaper
-cycle stays 4K.
-
 ## Boot splash
 
 ![Boot splash](preview-unlock.png)
@@ -122,7 +118,6 @@ preview.png          theme switcher preview
 preview-unlock.png   Plymouth switcher preview
 preview.gif          background cycle, for this README
 docs/                banner and palette plates, for this README
-build/               sources and generators
 ```
 
 `colors.toml` drives everything else. Omarchy generates the alacritty, foot, kitty,
@@ -135,27 +130,9 @@ on.
 
 ## Rebuilding
 
-Nothing here is hand-painted. The wallpapers, previews and README plates are all generated:
-
-```bash
-bash build/all.sh
-```
-
-Needs `imagemagick`, `librsvg` and `chromium`. Every stage is seeded, so a rebuild
-reproduces the same output. Individual stages run on their own once `build/00-prepare.sh`
-has been through once.
-
-```
-build/sigil.svg                the mark as geometry, renders at any size
-build/unlock.svg               the boot lockup
-build/preview.html             the desktop mock behind preview.png
-build/wallpaper-ensign.html    the wordmark plate
-build/banner.html              the banner at the top of this file
-build/palette.html             the palette plate above
-build/src/                     the two source plates the sigil texture comes from
-```
-
-`build/` comes along when the repo is cloned as a theme. Nothing in Omarchy reads it.
+Nothing here is hand-painted — the wallpapers, previews and README plates are all
+generated from `colors.toml` and an SVG sigil by a seeded imagemagick/chromium pipeline.
+Those generators live outside this repo so a theme clone stays small.
 
 ## License
 
