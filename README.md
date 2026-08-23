@@ -81,7 +81,7 @@ Plus `orange #b08d7c` and `brown #6b6257`.
 
 ## Wallpapers
 
-Six, 3840×2160, generated against this palette rather than sourced. Omarchy picks the
+Seven, 3840×2160, generated against this palette rather than sourced. Omarchy picks the
 first one alphabetically on a fresh activation, so `1-aphelion-mark` is what you land on.
 
 ![Backgrounds](preview.gif)
@@ -90,10 +90,11 @@ first one alphabetically on a fresh activation, so `1-aphelion-mark` is what you
 |---|---|
 | `1-aphelion-mark` | the full lockup over a reflecting plain — the default |
 | `2-ensign` | the mark and the wordmark, alone |
-| `3-aphelion` | the sigil over that same plain, horizon burst below |
-| `4-eclipse` | the sigil centred in a swirling nebula |
-| `5-monolith` | the sigil as pure geometry against soft weather |
-| `6-void` | 0.7% mean luminance, for OLED |
+| `3-ensign-rule` | the same lockup, hairline rule beneath |
+| `4-ensign-lockup` | mark and wordmark side by side, hairline between |
+| `5-ensign-foot` | the mark alone, wordmark small at the foot |
+| `6-eclipse` | the sigil centred in a swirling nebula |
+| `7-void` | 0.7% mean luminance, for OLED |
 
 The sigil is composited at or below its native resolution in every plate, so the
 crystalline edge stays sharp rather than turning to mush.
@@ -112,7 +113,7 @@ logo and colours are pushed to the SDDM login screen at the same time.
 colors.toml          palette
 hyprland.lua         border gradient, rounding, shadow
 icons.theme          Yaru-blue-dark
-backgrounds/         six wallpapers
+backgrounds/         seven wallpapers
 unlock.png           Plymouth boot logo
 preview.png          theme switcher preview
 preview-unlock.png   Plymouth switcher preview
