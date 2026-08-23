@@ -81,7 +81,8 @@ Plus `orange #b08d7c` and `brown #6b6257`.
 
 ## Wallpapers
 
-Seven, 3840×2160, generated against this palette rather than sourced. Omarchy picks the
+Seven, 3840×2160, generated against this palette rather than sourced. The flat-gradient
+plates ship as PNG — JPEG's block quantisation rings them in the near-black. Omarchy picks the
 first one alphabetically on a fresh activation, so `1-aphelion-mark` is what you land on.
 
 ![Backgrounds](preview.gif)
